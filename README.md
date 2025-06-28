@@ -14,23 +14,28 @@ The porpose of this project is get an idea of how to
 - Node.js
 
 ## Steps Followed
-1. Launched EC2 instance (Ubuntu)
-[Amazon EC2](screenshots/Launched_EC2.png)
+    1. Launched EC2 instance (Ubuntu)
+    [Amazon EC2](screenshots/Launched_EC2.png)
 
-2. Install Docker Engine on Ubuntu
-- Followed instructions to install Docker by using below link  
-docs.docker.com/engine/install/ubuntu/
-- Installed using the apt repository
-[Docker_installed_on_EC2](screenshots/docker_installed.png)
+    2. Install Docker Engine on Ubuntu
+    - Followed instructions to install Docker by using below link  
+    docs.docker.com/engine/install/ubuntu/
+    - Installed using the apt repository
+    [Docker_installed_on_EC2](screenshots/docker_installed.png)
 
-3. Created directory named my-app. Then, inside this directory app.nj file created and copied Node.js code. And also Dockerfile have been created
-[Dockerfile](screenshots/Dockerfile.png)
-[app.js_inside_the_directory](screenshots/app.js_inside_directory.png)
+    3. Created directory named my-app. Then, inside this directory app.nj file created and copied Node.js code. And also Dockerfile have been created
+    [Dockerfile](screenshots/Dockerfile.png)
+    [app.js_inside_the_directory](screenshots/app.js_inside_directory.png)
 
-4. Docker image has been build and run the container
+    4. Docker image has been build and run the container
 
-```markdown
-sudo docker build -t my-node-app
+    ```markdown
+    sudo docker build -t my-node-app .
+    sudo docker run -p 3000:3000 my-node-app
+
+    [build_image](screenshots/build_image.png)
+    [docker_run](screenshots/docker_run.png)
+    [runnig_containers](screenshots/running_container.png)
 
 
 ## Results
