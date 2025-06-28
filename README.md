@@ -30,14 +30,12 @@ docs.docker.com/engine/install/ubuntu/
    sudo docker build -t my-node-app .
    sudo docker run -p 3000:3000 my-node-app
 
-   
 [build_image](screenshots/build_image.png)
 [docker_run](screenshots/docker_run.png)
 [Running_containers_on_docker_engine](screenshots/running_container.png)
 
 5. Browse application from local windows machne
 [browsed_success](/workspaces/Docker-simple-Node.js/screenshots/browsed_success.png)
-
 
 ## Results
 It viewed Simple hello world! app successfully
