@@ -29,8 +29,9 @@ docs.docker.com/engine/install/ubuntu/
 
 4. Docker image has been build and run the container
 ```markdown
-   sudo docker build -t my-node-app .
-   sudo docker run -p 3000:3000 my-node-app```
+```bash
+sudo docker build -t my-node-app .
+sudo docker run -p 3000:3000 my-node-app
 
 [build_image](screenshots/build_image.png)
 [docker_run](screenshots/docker_run.png)
